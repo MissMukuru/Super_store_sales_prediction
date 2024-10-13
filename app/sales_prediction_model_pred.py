@@ -12,7 +12,7 @@ st.sidebar.title("Navigation")
 option = st.sidebar.radio('Go to', ['Homepage', 'Data Information', 'Visualizations', 'Machine learning model'])
 
 # Load the data
-data = pd.read_csv("C:/Users/HPPC/Downloads/super_store.csv")
+data = pd.read_csv("C:/Users/HPPC/Desktop/sales_prediction/data/super_store.csv")
 
 # Homepage
 if option == 'Homepage':
@@ -143,7 +143,7 @@ elif option == 'Machine learning model':
     st.write("Welcome to the sales prediction")
 
     # Load the model
-    model = joblib.load("C:/Users/HPPC/Downloads/logistic_model.pkl")
+    model = joblib.load("C:/Users/HPPC/Desktop/sales_prediction/modelling/logistic_model.pkl")
     st.write("Model loaded successfully, go ahead and make predictions")
 
     # Input fields for user
